@@ -1,0 +1,43 @@
+@import url("https://use.typekit.net/ohq8mpr.css");
+
+body {
+    font-family: hero-new, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+h1 {
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 56px;
+}
+
+header h2 {
+    font-family: hero-new, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+main {
+    font-size: 14px;
+}
+
+.front-page {
+    font-size: 72px;
+}
+
+.footer div {
+    font-size: 12px;
+}
+
+@media screen and (max-width:1000px) {
+    :root {
+        --body-text: 10px
+    }
+    
+}
+
+:root {
+    --body-text: 20px
+}
