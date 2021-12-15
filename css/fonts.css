@@ -13,10 +13,20 @@ h1 {
     font-size: 56px;
 }
 
+header {
+    margin: 0 10px 0 10px;
+}
+
 header h2 {
     font-family: hero-new, sans-serif;
     font-weight: 700;
     font-style: italic;
+    font-size: 40px;
+}
+
+nav a {
+    margin-top: 15px;
+    font-size: 18px;
 }
 
 main {

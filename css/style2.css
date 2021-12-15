@@ -32,7 +32,7 @@ h2 a {
     text-decoration: none;
     transition: transform 0.4s;
 }
-.nav-links-expand{
+.nav__mobile{
     display: none;
     height: 200px;
     width: 200px;
@@ -54,6 +54,10 @@ hr {
 }
 
 @media screen and (max-width: 1000px) {
+    .nav__mobile {
+        display: block;
+    }
+    
     .nav {
         display: none;
         text-align: center;
@@ -80,10 +84,6 @@ hr {
 
     .nav a:nth-child(2){
         background-color: black;
-    }
-
-    .nav-links-expand {
-        display: block;
     }
     
     .desk-nav {
@@ -135,14 +135,12 @@ h1 {
     color: black;
 }
 
-
 /*FRONTPAGE*/
 .front-page {
     width: 100%;
     padding-top: 200px;
     text-align: center;
 }
-
 
 @media screen and (max-width: 1000px) {
     body {
@@ -193,6 +191,9 @@ h1 {
     width: 400px;
     padding-top: 70px;
 }
+
+
+
 
 @media screen and (max-width: 1000px) {
     h1 {
@@ -251,8 +252,12 @@ h1 {
 }
 
 @media screen and (max-width: 1060px) {
+    .about {
+        overflow-x: hidden;
+    }
+
     .flex-container{
-    display: grid;
+        display: grid;
     }
 
     .img-container {
@@ -333,7 +338,6 @@ h1 {
     width: 400px;
     object-fit: cover;
 }
-
 
 @media screen and (max-width: 1000px) {
     .grid{
