@@ -63,6 +63,11 @@ hr {
         width: 95vw;
         height: 17vh;
         background-color: rgba(0, 0, 0, 0.80);
+        z-index: 1;
+    }
+
+    .nav-links-expand {
+        display: block;
     }
 
     .nav a {
@@ -80,10 +85,6 @@ hr {
 
     .nav a:nth-child(2){
         background-color: black;
-    }
-
-    .nav-links-expand {
-        display: block;
     }
     
     .desk-nav {
@@ -250,30 +251,6 @@ h1 {
     font-size: 40px;
 }
 
-@media screen and (max-width: 1060px) {
-    .flex-container{
-    display: grid;
-    }
-
-    .img-container {
-        position: static;
-        width: 80vw;
-        height: 40vh;
-        margin-top: 80px;
-    }
-
-    .img-container img{
-        position: fixed;
-        height: 400px;
-        margin-top: -165px;
-        margin-left: 450px;
-    }
-
-    .img-container h2 {
-        padding-top: 17vh;
-        margin-left: 100px;
-    }
-}
 
 @media screen and (max-width: 1000px) {
     body{
@@ -285,23 +262,35 @@ h1 {
         font-size: 150px;
         margin-top: 30px;
     }
-    
-    .img-container{
+
+    .about-container{
+        display: grid;
+    }
+
+    .img-container {
+        position: static;
+        width: 80vw;
+        height: 55vh;
+        margin-top: 20px;
+    }
+
+    .img-container img{
         height: 70vh;
+        margin-top: -100px;
+        margin-left: 450px;
     }
 
     .img-container img{
         position: absolute;
-        height: 1380px;
         margin-left: 100px;
-        margin-top: -225px;
+        margin-top: -246px;
     }
         
     .img-container h2{ 
         font-size: 150px;
         transform: rotate(90deg);
-        margin-top: 250px;
-        margin-left: -150px;
+        margin-top: 200px;
+        margin-left: -140px;
     }
 
     .text-container {
@@ -336,7 +325,7 @@ h1 {
 
 
 @media screen and (max-width: 1000px) {
-    .grid{
+    .work__grid{
     display: grid;
     row-gap: 50px;
     grid-template-columns: repeat(1, 1fr);
@@ -376,4 +365,31 @@ footer {
  
 .footer__bg--yellow {
     background-color: #F5EB90;
+ }
+
+ @media screen and (max-width: 1000px) {
+    footer {
+        display: grid;
+        width: 100vw;
+        height: 30vh;
+    }
+
+    .footer-content {
+        margin-left: 100px;
+    }
+
+    .footer div {
+        margin: 30px;
+    }
+
+    .footer p {
+        font-size: 40px;
+    }
+
+    .footer h5 {
+        font-size: 3em;
+    }
+    .footer h3 {
+        font-size: 4em;
+    }
  }
